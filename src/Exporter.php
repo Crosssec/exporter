@@ -18,12 +18,12 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 /**
  * @author Grégoire Paris <postmaster@greg0ire.fr>
  */
-final class Exporter
+class Exporter
 {
     /**
      * @var TypedWriterInterface[]
      */
-    private $writers;
+    protected $writers;
 
     /**
      * @param TypedWriterInterface[] $writers an array of allowed typed writers, indexed by format name
